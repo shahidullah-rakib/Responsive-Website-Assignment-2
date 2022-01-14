@@ -1,0 +1,116 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:wght@700&family=Playball&family=Poppins:ital,wght@0,500;1,500&family=Roboto+Slab:wght@700&family=Satisfy&display=swap');
+/* common style */
+body{
+    
+    font-family: 'Playball', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(32, 32, 32);
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+                        /* Header section */
+
+header{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+                        /* Intro section */
+.top-section{
+    margin-bottom: 10px;
+}
+.intro-blog{
+    margin-top: 50px;
+}
+.intro-blog h1{
+    font-size: 60px;
+}
+.intro-blog h5{
+    font-size: 18px;
+    margin-right: 150px;
+}
+.top-section{
+    display: flex;
+    /* margin: 100px; */
+}
+.intro-blog button{
+    font-size: 20px;
+    background-color: rgb(255, 57, 135);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.fa-arrow-right{
+    margin-left: 20px;
+}
+
+.main-camera{
+    width: 500px;
+    height: 500px;
+    margin-top: 30px;
+    margin-right: 130px;
+}
+                        /* Middle section */
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.brand-icon{
+    text-align: center;
+}
+.brand-icon img{
+    
+    margin: 40px;
+
+}
+                        /* Popular section */
+
+.popular-section{
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 100px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.heading{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.product{
+    margin-bottom: 20px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #888888;
+}
+.products img{
+    width: 345px;
+}
+.see-more{
+    text-align: right;
+    margin-top: 30px;
+    
+}
+.see-more a{
+    text-decoration: none;  
+    color: rgb(255, 57, 135);
+    font-size: 20px;
+}
+
+                        /* Footer */
