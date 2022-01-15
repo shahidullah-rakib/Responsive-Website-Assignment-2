@@ -36,6 +36,11 @@ header{
     justify-content: space-evenly;
 }
 
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
                         /* Intro section */
 .top-section{
     margin-bottom: 10px;
@@ -218,6 +223,11 @@ footer{
     font-family: 'Vujahday Script', cursive;
 }
 
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
 footer i{
     margin-left: 20px;
     margin-right: 20px;
@@ -280,7 +290,7 @@ footer i{
         margin-bottom: 50px;
     }
     
-    .col-25, .col-75, input[type=submit] {
+    .col-25, .col-75, input[type=submit], input[type=reset] {
         width: 100%;
         margin-top: 0;
       }
@@ -349,7 +359,7 @@ footer i{
         margin-bottom: 50px;
     }
     
-    .col-25, .col-75, input[type=submit] {
+    .col-25, .col-75, input[type=submit], input[type=reset] {
         width: 100%;
         margin-top: 0;
       }
