@@ -289,44 +289,57 @@
             <form action="/action_page.php">
                 <div class="row">
                     <div class="col-25">
-                        <label for="fname">First Name</label>
+                        <label>Your Name</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <input type="text" placeholder="Your name..">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="lname">Last Name</label>
+                        <label>Product Name</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <input type="text" placeholder="Product name..">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="country">Country</label>
+                        <label>Product Code</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" placeholder="Product Code..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>Order Location</label>
                     </div>
                     <div class="col-75">
                         <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
+                            <option value="dhaka">Dhaka</option>
+                            <option value="rangpur">Rangpur</option>
+                            <option value="khulna">Khulna</option>
+                            <option value="barisal">Barisal</option>
+                            <option value="chattagong">Chattagong</option>
+                            <option value="rajshahi">Rajshahi</option>
+                            <option value="vola">Vola</option>
                         </select>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="subject">Subject</label>
+                        <label>Message</label>
                     </div>
                     <div class="col-75">
-                        <textarea id="subject" name="subject" placeholder="Write something.."
-                            style="height:200px"></textarea>
+                        <textarea placeholder="Write something that you want to know.." style="height:200px"></textarea>
                     </div>
                 </div>
                 <br>
                 <div class="row">
+                    <input type="reset" value="Reset">
                     <input type="submit" value="Submit">
+
                 </div>
             </form>
         </div>
