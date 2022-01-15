@@ -14,6 +14,8 @@ body{
 .container{
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 100px;
+    /* position: relative; */
 }
                         /* Header section */
 
@@ -29,7 +31,6 @@ header{
     margin-right: 100px;
 
 }
-
 .menu{
     display: flex;
     justify-content: space-evenly;
@@ -50,12 +51,15 @@ header{
     font-size: 18px;
     margin-right: 150px;
 }
-.intro-blog button{
+button{
     font-size: 20px;
     background-color: rgb(255, 57, 135);
     color: white;
     padding: 10px 20px;
     border-radius: 30px;
+}
+.intro-blog:hover button{
+    transform: scale(1.1);
 }
 .fa-arrow-right{
     margin-left: 20px;
@@ -66,6 +70,11 @@ header{
     height: 500px;
     margin-top: 30px;
     margin-right: 130px;
+}
+
+.camera-photo:hover{
+    transform: scale(1.3);
+    transition: transform 1s ease-in-out;
 }
                         /* Middle section */
 hr{
@@ -108,6 +117,9 @@ hr{
 .products img{
     width: 345px;
 }
+.ratings i{
+    color: rgb(255, 208, 0);
+}
 .see-more{
     text-align: right;
     margin-top: 30px;
@@ -118,6 +130,62 @@ hr{
     color: rgb(255, 57, 135);
     font-size: 20px;
 }
+
+                        /* order now */
+.box-order{
+    text-align: center;
+    width: 50%;
+    margin-left: 22%;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px rgb(2, 1, 1);
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(97, 80, 80);
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
 
                         /* Footer */
 footer{
@@ -144,10 +212,83 @@ footer i{
 @media only screen and (max-width:688px)  {
     header{
         width: 100%;
-        
+        overflow-x: hidden;  
     }
     .container{
         width: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    button{
+        margin-top: 20px;
+    }
+    .camera-photo{
+        width: 380px;
+        margin-right: 70px;
+        margin-top: 50px;
+    }
+    .top-section{
+        text-align: center;
+    }
+    .intro-blog h5{
+        margin: 0;
+    }
+    .header{
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-section{
+        flex-direction: column;
+    }
+    .menu{
+        display: block;
+    }
+
+    .products{
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product img{
+        width: 100%;
+    }
+    .box-order{
+        margin-left: 55px;
+        margin-bottom: 50px;
+    }
+    
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    
+    
+}
+
+                        /* tablet section */
+
+@media only screen and (min-width:688px) and (max-width:992px)  {
+    
+    header{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+    button{
+        margin-top: 20px;
+    }
+    .camera-photo{
+        width: 380px;
+        margin-left: 40%;
+        margin-top: 50px;
+    }
+
+    .top-section{
+        text-align: center;
+    }
+    .intro-blog h5{
         margin: 0;
     }
 
@@ -171,37 +312,15 @@ footer i{
     .product img{
         width: 100%;
     }
+    .box-order{
+        margin-left: 20%;
+        margin-bottom: 50px;
+    }
     
-}
-
-                        /* tablet section */
-
-@media only screen and (min-width:688px) and (max-width:992px)  {
-    
-    header{
+    .col-25, .col-75, input[type=submit] {
         width: 100%;
-    }
-    .container{
-        width: 100%;
-        margin: 0;
-    }
-
-    .header{
-        
-        text-align: center;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .top-section{
-        flex-direction: column;
-    }
-    .menu{
-        display: block;
-    }
-
-    .products{
-        text-align: center;
-        grid-template-columns: repeat(1, 1fr);
-    }
+        margin-top: 0;
+      }
 }
                             /* wide display section */
 @media only screen and (min-width:992px) and (max-width:1312px)  {
