@@ -144,6 +144,7 @@ footer i{
 @media only screen and (max-width:688px)  {
     header{
         width: 100%;
+        
     }
     .container{
         width: 100%;
@@ -165,6 +166,10 @@ footer i{
     .products{
         text-align: center;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product img{
+        width: 100%;
     }
     
 }
@@ -198,7 +203,7 @@ footer i{
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
+                            /* wide display section */
 @media only screen and (min-width:992px) and (max-width:1312px)  {
     
     header{
